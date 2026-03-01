@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/></marker>
+    <style>
+      .h{font:22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-weight:700;fill:#0f172a}
+      .t{font:16px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#111827}
+      .b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:10}
+    </style>
+  </defs>
+  <text x="30" y="42" class="h">基础镜像可信维护闭环</text>
+  <rect x="40" y="120" width="180" height="90" class="b"/><text x="70" y="172" class="t">白名单定义</text>
+  <rect x="260" y="120" width="180" height="90" class="b"/><text x="287" y="172" class="t">版本固定</text>
+  <rect x="480" y="120" width="180" height="90" class="b"/><text x="517" y="172" class="t">安全扫描</text>
+  <rect x="700" y="120" width="180" height="90" class="b"/><text x="735" y="172" class="t">回归验证</text>
+  <rect x="920" y="120" width="180" height="90" class="b"/><text x="955" y="172" class="t">目录发布</text>
+  <rect x="1120" y="120" width="140" height="90" class="b"/><text x="1152" y="172" class="t">周期更新</text>
+  <line x1="220" y1="165" x2="260" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="165" x2="480" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="660" y1="165" x2="700" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="880" y1="165" x2="920" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="165" x2="1120" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 1190 210 C 1160 310, 120 310, 90 210" fill="none" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="500" y="335" class="t">高危漏洞触发临时更新；常规按月更新并回写白名单目录</text>
+</svg>
