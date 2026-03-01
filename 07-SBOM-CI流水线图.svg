@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/></marker>
+    <style>
+      .h{font:22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-weight:700;fill:#0f172a}
+      .t{font:16px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#111827}
+      .b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:10}
+      .g{fill:#ecfeff;stroke:#0e7490;stroke-width:2;rx:10}
+    </style>
+  </defs>
+  <text x="30" y="42" class="h">SBOM 在 CI/CD 的最小闭环</text>
+  <rect x="40" y="120" width="150" height="90" class="b"/><text x="82" y="172" class="t">Build</text>
+  <rect x="230" y="120" width="150" height="90" class="b"/><text x="274" y="172" class="t">Digest</text>
+  <rect x="420" y="120" width="150" height="90" class="g"/><text x="467" y="172" class="t">SBOM</text>
+  <rect x="610" y="120" width="150" height="90" class="b"/><text x="658" y="172" class="t">Scan</text>
+  <rect x="800" y="120" width="150" height="90" class="b"/><text x="845" y="172" class="t">Sign</text>
+  <rect x="990" y="120" width="150" height="90" class="b"/><text x="1036" y="172" class="t">Gate</text>
+  <rect x="1160" y="120" width="90" height="90" class="b"/><text x="1178" y="172" class="t">Push</text>
+  <line x1="190" y1="165" x2="230" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="380" y1="165" x2="420" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="570" y1="165" x2="610" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="760" y1="165" x2="800" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="950" y1="165" x2="990" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1140" y1="165" x2="1160" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="40" y="280" width="1210" height="90" fill="#fefce8" stroke="#ca8a04" stroke-width="2" rx="10"/>
+  <text x="60" y="320" class="t">归档工件：image digest + sbom(spdx/cyclonedx) + scan report + signature/verify result</text>
+</svg>
