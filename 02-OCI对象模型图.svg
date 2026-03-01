@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/></marker>
+    <style>
+      .t{font:16px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; fill:#111827}
+      .h{font:22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-weight:700; fill:#0f172a}
+      .b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:10}
+      .n{fill:#eef2ff;stroke:#4338ca;stroke-width:2;rx:10}
+      .l{fill:#ecfeff;stroke:#0e7490;stroke-width:2;rx:10}
+    </style>
+  </defs>
+  <text x="30" y="40" class="h">OCI 镜像对象模型（Index / Manifest / Config / Layers）</text>
+  <rect x="30" y="90" width="250" height="70" class="b"/>
+  <text x="62" y="130" class="t">Image Reference: repo/app:1.0</text>
+  <rect x="350" y="80" width="250" height="90" class="n"/>
+  <text x="430" y="118" class="t">Image Index</text>
+  <text x="410" y="145" class="t">(multi-platform)</text>
+  <rect x="700" y="80" width="250" height="90" class="n"/>
+  <text x="775" y="118" class="t">Manifest</text>
+  <text x="750" y="145" class="t">(one platform)</text>
+  <rect x="1020" y="70" width="230" height="110" class="b"/>
+  <text x="1082" y="115" class="t">Config JSON</text>
+  <text x="1048" y="142" class="t">env/cmd/rootfs.diff_ids</text>
+  <rect x="700" y="240" width="170" height="90" class="l"/>
+  <text x="750" y="278" class="t">Layer 0</text>
+  <text x="730" y="306" class="t">base filesystem</text>
+  <rect x="900" y="240" width="170" height="90" class="l"/>
+  <text x="950" y="278" class="t">Layer 1</text>
+  <text x="936" y="306" class="t">dependencies</text>
+  <rect x="1100" y="240" width="170" height="90" class="l"/>
+  <text x="1150" y="278" class="t">Layer 2</text>
+  <text x="1140" y="306" class="t">app binaries</text>
+  <line x1="280" y1="125" x2="350" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="600" y1="125" x2="700" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="950" y1="115" x2="1020" y2="115" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="860" y1="170" x2="785" y2="240" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="875" y1="170" x2="985" y2="240" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="890" y1="170" x2="1185" y2="240" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="30" y="390" width="1220" height="180" fill="#fefce8" stroke="#ca8a04" stroke-width="2" rx="10"/>
+  <text x="50" y="430" class="h">安全含义</text>
+  <text x="50" y="470" class="t">1) 每个对象都由 digest 标识，内容变化会导致 digest 变化，可追溯。</text>
+  <text x="50" y="500" class="t">2) 镜像风险分析需要同时检查 manifest/config/layers，而不是仅看容器运行视图。</text>
+  <text x="50" y="530" class="t">3) ImageID 实质是 config JSON 的哈希；层内容由 descriptor digest 唯一标识。</text>
+</svg>
