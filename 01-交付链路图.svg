@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .t{font: 18px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; fill:#111827}
+      .h{font: 22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-weight:700; fill:#0f172a}
+      .b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:10}
+    </style>
+  </defs>
+  <text x="40" y="40" class="h">应用交付链路（代码到容器运行）</text>
+  <rect x="40" y="80" width="190" height="90" class="b"/>
+  <text x="76" y="118" class="t">业务代码</text>
+  <text x="70" y="146" class="t">Dockerfile</text>
+  <rect x="280" y="80" width="190" height="90" class="b"/>
+  <text x="330" y="118" class="t">构建镜像</text>
+  <text x="338" y="146" class="t">CI/CD</text>
+  <rect x="520" y="80" width="190" height="90" class="b"/>
+  <text x="555" y="118" class="t">镜像仓库</text>
+  <text x="555" y="146" class="t">Registry</text>
+  <rect x="760" y="80" width="190" height="90" class="b"/>
+  <text x="797" y="118" class="t">集群拉取</text>
+  <text x="800" y="146" class="t">Deploy</text>
+  <rect x="1000" y="80" width="160" height="90" class="b"/>
+  <text x="1048" y="118" class="t">运行</text>
+  <text x="1032" y="146" class="t">Container</text>
+  <line x1="230" y1="125" x2="280" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="470" y1="125" x2="520" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="710" y1="125" x2="760" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="950" y1="125" x2="1000" y2="125" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="40" y="220" class="t">要点：镜像里包含的内容会随部署进入生产环境，镜像风险会被直接带入运行态。</text>
+</svg>
