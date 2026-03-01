@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/></marker>
+    <style>
+      .t{font:16px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; fill:#111827}
+      .h{font:22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-weight:700; fill:#0f172a}
+      .b{fill:#f8fafc;stroke:#334155;stroke-width:2;rx:10}
+    </style>
+  </defs>
+  <text x="30" y="40" class="h">镜像加固实施流程（开发执行版）</text>
+
+  <rect x="30" y="120" width="180" height="90" class="b"/>
+  <text x="75" y="172" class="t">选择基础镜像</text>
+
+  <rect x="260" y="120" width="180" height="90" class="b"/>
+  <text x="300" y="172" class="t">改造 Dockerfile</text>
+
+  <rect x="490" y="120" width="180" height="90" class="b"/>
+  <text x="538" y="172" class="t">构建镜像</text>
+
+  <rect x="720" y="120" width="180" height="90" class="b"/>
+  <text x="752" y="172" class="t">安全检查</text>
+
+  <rect x="950" y="120" width="140" height="90" class="b"/>
+  <text x="989" y="172" class="t">复测</text>
+
+  <rect x="1130" y="120" width="120" height="90" class="b"/>
+  <text x="1160" y="172" class="t">发布</text>
+
+  <line x1="210" y1="165" x2="260" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="165" x2="490" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="670" y1="165" x2="720" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="900" y1="165" x2="950" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1090" y1="165" x2="1130" y2="165" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <path d="M 1020 220 C 960 300, 760 300, 720 220" fill="none" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="790" y="305" class="t">发现问题 -> 修复后重新检查</text>
+</svg>
